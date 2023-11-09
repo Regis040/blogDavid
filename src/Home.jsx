@@ -72,7 +72,7 @@ function Home () {
         const finalArticles = publishedArticles.slice(-3);
 
     return (        
-        <main>
+        <main className="home">
           {/* afficher les articles : récupèrer les 3 derniers articles publiés et les afficher  */}
             {finalArticles.map((article) => {
                 return (            

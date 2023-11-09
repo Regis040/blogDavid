@@ -11,9 +11,9 @@ function Header () {
            <h1>Le blog du cours de David</h1> 
            <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>A propos de moi</li>
-                    <li>Mes idées</li>  
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">A propos de moi</a></li>
+                    <li><a href="#">Mes idées</a></li>  
                     <ProfilMenu />
                 </ul>
            </nav>

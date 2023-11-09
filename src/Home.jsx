@@ -1,3 +1,8 @@
+import Header from './Header.jsx';
+import Footer from './Footer.jsx';
+import './App.scss';
+
+
 function Home () {
 
     const articles = [
@@ -72,17 +77,21 @@ function Home () {
         const finalArticles = publishedArticles.slice(-3);
 
     return (        
+      <>
+      <Header />
         <main className="home">
           {/* afficher les articles : récupèrer les 3 derniers articles publiés et les afficher  */}
             {finalArticles.map((article) => {
-                return (            
-                             <article>
-                                    <h2>{article.title}</h2>
-                                    <p>{article.price} €</p>
-                             </article>                   
+                return (      
+                        <article className="App">
+                            <h2>{article.title}</h2>
+                            <p>{article.price} €</p>
+                        </article>                                    
                 );
             })}
         </main>
+        <Footer />
+        </>
     );
 }
 export default Home;

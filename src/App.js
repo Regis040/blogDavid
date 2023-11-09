@@ -1,16 +1,18 @@
 // import logo from './logo.svg';
-import './App.css';
-import Header from './Header.jsx'
-import Footer from './Footer.jsx';
+import './App.scss';
 import Home from './Home.jsx';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Contact from "./Contact.jsx";
+
 
 function App() {
   return (
-    <div className="App">         
-      <Header />
-      <Home />
-      <Footer />
-    </div>
+    <BrowserRouter>
+        <Routes>    
+             <Route path="/" element={<Home />} />
+             <Route path="/contact" element={<Contact />} />          
+        </Routes>
+    </BrowserRouter>
   );
 }
 export default App;

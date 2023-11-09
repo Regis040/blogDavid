@@ -1,8 +1,9 @@
-import './Footer.scss'
+import "./Footer.scss"
+
 
 function Footer () {
     return (
-        <footer>
+        <footer className="App">
          <p>Je suis ton maitre et voici ma règle</p>
         </footer>
     );

@@ -78,7 +78,7 @@ function Home () {
                 return (            
                              <article>
                                     <h2>{article.title}</h2>
-                                    <p>{article.price}</p>
+                                    <p>{article.price} €</p>
                              </article>                   
                 );
             })}

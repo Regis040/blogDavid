@@ -1,4 +1,5 @@
 // J'ai importé le composant ProfilMenu 
+import { Link } from "react-router-dom";
 import ProfilMenu from "./ProfilMenu";
 
 
@@ -12,9 +13,10 @@ function Header () {
            <h1>Le blog du cours de David</h1> 
            <nav>
                 <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">A propos de moi</a></li>
-                    <li><a href="">Mes idées</a></li>  
+                    <li><Link to ="/">Home</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
+                    <li><Link to="/profil">Mon profil</Link></li>  
+                    <li><Link to="/articles">Mes articles</Link></li>  
                     <ProfilMenu />
                 </ul>
            </nav>

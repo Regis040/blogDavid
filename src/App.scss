@@ -64,10 +64,15 @@ h2{
   margin: 0;
 }
 
+.iframe {
+  margin: auto;
+  border: 1px solid black;
+}
 
-
-
-
+.theArticles {
+  text-align: center;
+  color: darkgoldenrod;
+}
 
 @keyframes App-logo-spin {
   from {

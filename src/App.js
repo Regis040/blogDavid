@@ -1,8 +1,8 @@
 // import logo from './logo.svg';
 import './App.scss';
-import Home from './Home.jsx';
+import Home from './pages/Home.jsx';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Contact from "./Contact.jsx";
+import Contact from "./pages/Contact.jsx";
 
 
 function App() {
